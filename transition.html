@@ -10,6 +10,12 @@
             width: 100px;
             border: 2px solid peru;
             background-color: peachpuff;
+            /* property name | duration | easing function | delay */
+            transition: width 5s linear 1s, background-color 5s ease-in 1s;
+        }
+        .box:hover{
+            width: 400px;
+            background-color: brown;
         }
     </style>
 </head>
@@ -20,8 +26,8 @@
         <li>transition:how it wil swap</li>
     </ul>
 
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box 3</div>
 </body>
 </html>
