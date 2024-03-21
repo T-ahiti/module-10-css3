@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --promary-color:blue;
+            --secondary-color: steelblue;
+            --font-size: 20px;
+        }
         h1{
-            color: blue;
+            color: var(--promary-color);
         }
         h5{
-            background-color: blue;
+            background-color:var(--promary-color);
         }
         .box{
-            border: 2px solid blue;
+            border: 2px solid var(--promary-color);
+            width: calc(100% - 300px);
         }
         .box p{
-            color: blue;
+            color: var(--promary-color);
         }
     </style>
 </head>
