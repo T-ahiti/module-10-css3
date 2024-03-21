@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin-left: 50px;
+        }
         .box{
             height: 100px;
             width: 100px;
             border: 2px solid peru;
             background-color: peachpuff;
             /* property name | duration | easing function | delay */
-            transition: width 5s linear 1s, background-color 5s ease-in 1s;
+            /* transition: width 5s linear 1s, background-color 5s ease-in 1s; */
+            transition: transform 3s;
         }
         .box:hover{
-            width: 400px;
-            background-color: brown;
+            transform: rotate(45deg) scale(1.5) translateX(150px);
+            /* width: 400px; */
+            /* background-color: brown; */
         }
     </style>
 </head>
